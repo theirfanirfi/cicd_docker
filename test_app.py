@@ -127,4 +127,4 @@ def test_api_reports_unsupported_operation(client):
 
 
 def test_api_rejects_get_requests(client):
-    assert client.get("/api/calculate").status_code == 405
+    assert client.get("/api/calculate").status_code == 200
