@@ -3,6 +3,8 @@ name: Continuous integration
 on:
   push:
     branches: [dev]
+  pull_request:
+    branches: [main]
 
 jobs:
   tests:
